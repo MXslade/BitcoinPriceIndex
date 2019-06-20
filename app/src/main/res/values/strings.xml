@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BitcoinPriceIndex</string>
+    <string name="bottom_navigation_item_rates">Rates</string>
+    <string name="bottom_navigation_item_transactions">Transactions</string>
+    <string name="bottom_navigation_item_converter">Converter</string>
+    <string name="usd">USD</string>
+    <string name="eur">EUR</string>
+    <string name="kzt">KZT</string>
+    <string name="convertButton">convert</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="currencyTextSize">35sp</dimen>
+    <dimen name="currencyMarginVertical">10dp</dimen>
+    <dimen name="currencyMarginHorizontal">30dp</dimen>
+    <dimen name="transactionTextSize">20sp</dimen>
+</resources>

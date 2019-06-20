@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/usdTextView"
+        android:text="@string/usd"
+        android:textSize="@dimen/currencyTextSize"
+        android:layout_marginTop="@dimen/currencyMarginVertical"
+        android:layout_marginStart="@dimen/currencyMarginHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/eurTextView"
+        android:text="@string/eur"
+        android:textSize="@dimen/currencyTextSize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/currencyMarginVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/kztTextView"
+        android:text="@string/kzt"
+        android:textSize="@dimen/currencyTextSize"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/currencyMarginHorizontal"
+        android:layout_marginTop="@dimen/currencyMarginVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/exchangeRateTextView"
+        android:text="ExchangeRate"
+        android:textSize="@dimen/currencyTextSize"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/currencyMarginVertical"
+        android:layout_below="@id/eurTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exchangeRateTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/currencyMarginVertical">
+
+        <RadioButton
+            android:id="@+id/weekRadioButton"
+            android:text="WEEK"
+            android:textSize="@dimen/currencyTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/monthRadioButton"
+            android:text="MONTH"
+            android:textSize="@dimen/currencyTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/yearRadioButton"
+            android:text="YEAR"
+            android:textSize="@dimen/currencyTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="58dp"/>
+
+</RelativeLayout>

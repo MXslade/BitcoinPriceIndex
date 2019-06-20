@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/converterEditText"
+        android:hint="Enter the number"
+        android:textAlignment="center"
+        android:textSize="@dimen/currencyTextSize"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/currencyMarginVertical"/>
+
+    <ImageView
+        android:id="@+id/converterImageView"
+        android:src="@drawable/arrows"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/converterEditText" />
+
+    <TextView
+        android:id="@+id/converterTextView"
+        android:hint="Amount of Bitcoins"
+        android:textAlignment="center"
+        android:textSize="@dimen/currencyTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/currencyMarginVertical"
+        android:layout_below="@id/converterImageView"/>
+
+    <RadioGroup
+        android:id="@+id/converterRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/converterTextView"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/usdRadioButton"
+            android:text="@string/usd"
+            android:textSize="@dimen/currencyTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/eurRadioButton"
+            android:text="@string/eur"
+            android:textSize="@dimen/currencyTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/kztRadioButton"
+            android:text="@string/kzt"
+            android:textSize="@dimen/currencyTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:text="@string/convertButton"
+        android:textSize="25sp"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/converterRadioGroup"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

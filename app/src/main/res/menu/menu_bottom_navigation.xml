@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ratesItem"
+        android:icon="@drawable/graphic_icon"
+        android:title="@string/bottom_navigation_item_rates"/>
+
+    <item
+        android:id="@+id/transactionsItem"
+        android:icon="@drawable/transaction_icon"
+        android:title="@string/bottom_navigation_item_transactions"/>
+
+    <item
+        android:id="@+id/converterItem"
+        android:icon="@drawable/converter"
+        android:title="@string/bottom_navigation_item_converter"/>
+
+</menu>
